@@ -113,8 +113,7 @@ class DataScienceSalary():
             "employee_residence" :self.employee_residence,
              "remote_ratio": self.remote_ratio,
             "company_location" :self.company_location,
-            "company_size" :self.company_size,
-            "salary_res" : self.salary_res}
+            "company_size" :self.company_size}
 
         self.data=self.collection_user.insert_one(self.query)
         return self.data
