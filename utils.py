@@ -103,7 +103,7 @@ class DataScienceSalary():
         self.db = self.mongo_client['salarydata1_db']
         self.collection_user = self.db['user_input']
         # self. __database_init()
-        self.query({
+        self.query ={
             "work_year" :self.work_year,
              "experience_level": self.experience_level,
              "employment_type":self.employment_type,
@@ -113,7 +113,8 @@ class DataScienceSalary():
             "employee_residence" :self.employee_residence,
              "remote_ratio": self.remote_ratio,
             "company_location" :self.company_location,
-            "company_size" :self.company_size})
+            "company_size" :self.company_size,
+            "salary_res" : self.salary_res}
 
         self.data=self.collection_user.insert_one(self.query)
         return self.data
