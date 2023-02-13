@@ -89,7 +89,7 @@ def predict_salary():
             dssalary_res = DataScienceSalary_res.get_predicted_res()
             DataScienceSalary_res.database()
             return  render_template('index1.html', prediction = dssalary_res)
-
+                    
 
              
 
